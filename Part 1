@@ -31,15 +31,32 @@ public class HelloWorld
         int i = 0;
         while (i < 15) {
             System.out.println("i is" +i+ " but is less than 15");
-            i = i + 1;
+            i = i + 1; 
         }
-     }
-  }
+        int k = 6;
+        while (k > 5) {
+            System.out.println("k is" +k+ " but is greater than 5");
+            k = k + 1;
+        }
+        int a = 0;
+        while (a < 10) {
+            System.out.println("a is" +a+ " but is less than 10");
+            a = a + 1;
+        }
+        int b = 0;
+        while ( b <= 20) {
+            System.out.println("b is" +b+ " but is less than or equal to 20");
+            b = b + 1;
+        }
+        for (int g = 0; g >= 15; g = g + 1) {
+            System.out.println("g is equal to 15");
+        }
+        for (int j = 10; j < 10; j = j - 2) {
+            System.out.println("j is equal to 0");
+        }
+        for (int p = 10; p < 10; p = p - 3) {
+            System.out.println("p is equal to 0");
+        }
+    }
+}
         
-    
-    
-      
-     
-    
-    
- 
