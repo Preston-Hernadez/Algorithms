@@ -16,3 +16,14 @@
         }
     }
 }
+
+Second PART
+
+public class FizzBuzz {
+    public void run() {
+        for (int a = 1; a <= 100; a = a + 1) {
+            System.out.println(""+a+"");
+        if (a + 1 = 
+        
+    }
+}
