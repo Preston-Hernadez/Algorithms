@@ -4,10 +4,14 @@ public class FizzBuzz {
         while (a <= 100) {
             System.out.println("a is" +a+ "but is less than or equal to 100");
             a = a + 1;
+            System.out.println("Fizz");
+            a = a * 3;
+            System.out.println("Buzz");
+            a = a * 5;
+            System.out.println("FizzBuzz");
+            a = a * 15;
         }
         
         
     }
 }
-
-
