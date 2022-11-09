@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+/**
+ * Average each row of test scores
+ */
+public class ScannerReadCSVFile
+{
+    public void run() throws FileNotFoundException {
+        //Mr.Jaffe's code to read data from a file
+        //Instantiate a File object
+        File dataFile = new File("TestScoresByClass.csv");
+        
+        //Instantiate a Scanner object that uses the file
+        Scanner scanner= new Scanner(dataFile);
+        
+        //Set the delimeter as a new-line character so we can read the
+        //data one line at a time
+        scanner.useDelimeter("\n");
+        
+        System.out.println("Class:Avg Score");
+        
+        //Continue while theres still data in the file to be read
+        scanner.nextLine();
+        while(scanner.hasNextLine()) {
+            Scanner line = new Scanner(scanner.nextLine());
+            line.useDelimeter(",|\\n");
+            String z =(line.next());
+            int total = 0;
+            int count = 0;
+            while(line.hasNextInt()){
+                total += line.nextInt();
+                count++;
+            }
+            System.out.println(z +":"+ total/count);
+            }
+        }
+    }
+}
