@@ -49,4 +49,25 @@ public class Circle implements Shape
   }
 }
 
-
+public class Pentadecagon implements Shape
+{
+  private int sidelength;
+  private String color;
+  
+  public Pentadecagon(int sideLength, String color) {
+    this.sidelength = sidelength;
+    this.color = color;
+  }
+  
+  public double getArea(){
+    return (3*(2+ Math.srt(3))*(this.sideLength*this.sideLength));
+  }
+  
+  public double getPerimeter(){
+    return this.sideLength*12;
+  }
+  
+  public String getColor(){
+    return this.color;
+  }
+}
