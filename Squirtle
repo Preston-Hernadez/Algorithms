@@ -1,0 +1,24 @@
+public abstract class Animal {
+    public String getType() {
+    return "*** Abstract animal ***";
+  }
+  public String getColor() {
+    return "*** Abstract color ***";
+  }
+  public int getLegs() {
+    return 0;
+  }
+  public String speak() {
+    return "*** Yaba-daba-doo [default] ***";
+  }
+  public String getDisposition() {
+    return "*** meh [default] ***";
+  }
+   public String getName() {
+    return "*** No name defined - bummer ***";
+  }
+  public String getClassName() {
+    return this.getClass().getSimpleName();
+  }
+  
+}
