@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class PDA {
+    private
+    int age;
+    private Scanner scanner;
+    public PDA()
+    {
+        // We don't need to do anything in the constructor for
+        // our program.
+    }
+    
+    /**
+     * This is the main event loop for our PDA program
+     */
+    public void runEventLoop() {
+        while (true) {
+          System.out.println("How old are you?");
+          age = scanner.nextInt();
+          System.out.println(age);
+      }
+    }
+
+    /**
+     * The main method instantiates and runs the program
+     */
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        PDA pda = new PDA();
+        pda.runEventLoop();
+    }
+}
