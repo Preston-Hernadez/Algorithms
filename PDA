@@ -2,15 +2,14 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class PDA {
-    private int age;
+    int age;
     Scanner scanner = new Scanner(System.in);
-    
+    int LOWER_BOUND = 0;
     public PDA()
     {
         // We don't need to do anything in the constructor for
         // our program.
     }
-    
     /**
      * This is the main event loop for our PDA program
      */
@@ -19,11 +18,15 @@ public class PDA {
        System.out.println("How old are you?");
        try {
            age = scanner.nextInt();
-           System.out.println(age);
+           System.out.println(age); 
+       if (age < LOWER_BOUND) {
+            System.out.println(age+" is too young!!");
+        } else {
+            System.out.println("Computations go here");                
+        }   
        } catch (InputMismatchException error) {
            System.out.println("Please enter an integer");
        }
-       
     }
     }
     /**
@@ -34,3 +37,5 @@ public class PDA {
         pda.runEventLoop();
     }
 }
+
+
