@@ -1,5 +1,4 @@
-
-public class Dice
+public class Yahtzee
 {
   private int value;
   private Die6 die1;
@@ -7,7 +6,7 @@ public class Dice
   private Die6 die3;
   private Die6 die4;
   private Die6 die5;
-  public Dice() {
+  public Yahtzee() {
     die1 = new Die6();
     die2 = new Die6();
     die3 = new Die6();
@@ -25,20 +24,25 @@ public class Dice
           return this.die1.getValue();
       } else if (dNumber == 2) {
           return this.die2.getValue();
+      } else if (dNumber == 3) {
+          return this.die3.getValue();
+      } else if (dNumber == 4) {
+          return this.die4.getValue();
+      } else if (dNumber == 5) {
+          return this.die5.getValue();
+      } else if (dNumber == 6) {
+          return this.die6.getValue();
       }
-      return 0;
+          {
+          return 0;
+      }
   }
-  
   public void roll() {
     this.die1.roll();
     this.die2.roll();
   }
-
   public int rollAndGetValue() {
     this.roll();
     return this.getValue();
   }
-
 }
-Footer
-
