@@ -1,0 +1,79 @@
+
+/**
+ * 
+ *
+ * @author (Preston Hernandez)
+ * @version(1)
+ */
+public class Uno
+{
+    public int Red1;
+    public int Red2;
+    public int Red3;
+    public int Red4;
+    public int Red5;
+    public int Red6;
+    public int Red7;
+    public int Red8;
+    public int Red9;
+    public int RedSkip;
+    public int RedReverse;
+    public int RedTakeTwo;
+    public int Yellow1;
+    public int Yellow2;
+    public int Yellow3;
+    public int Yellow4;
+    public int Yellow5;
+    public int Yellow6;
+    public int Yellow7;
+    public int Yellow8;
+    public int Yellow9;
+    public int YellowSkip;
+    public int YellowReverse;
+    public int YellowTakeTwo;
+    public int Green1;
+    public int Green2;
+    public int Green3;
+    public int Green4;
+    public int Green5;
+    public int Green6;
+    public int Green7;
+    public int Green8;
+    public int Green9;
+    public int GreenSkip;
+    public int GreenReverse;
+    public int GreenTakeTwo;
+    public int Blue1;
+    public int Blue2;
+    public int Blue3;
+    public int Blue4;
+    public int Blue5;
+    public int Blue6;
+    public int Blue7;
+    public int Blue8;
+    public int Blue9;
+    public int BlueSkip;
+    public int BlueReverse;
+    public int BlueTakeTwo;
+    public Uno()
+    {
+        System.out.println("Hello!");
+        System.out.println("Welcome to Uno");
+        System.out.println("This is a multiplayer color and number based card game");
+        System.out.println("To start, each player is dealt 7 cards at random from the deck");
+        System.out.println("Next flip the top card from the deck, and place it facing up on the table");
+        System.out.println("The player left to the dealer starts the game");
+        System.out.println("The player can play cards from his hand to match either the number or color of the card in the middle of the table ");
+        System.out.println("Once you play your card, you turns is over, and goes to the next play");
+        System.out.println("If the player does not have a card that matches the number or color of the card in the middle of the table, they must draw a card");
+        System.out.println("There are also speacial cards with power ups in the game that can be played to match the color or sysmbol of the card on the table"); 
+        System.out.println("When a player reaches one card they must say UNO, or else they must take two cards from the deck");        
+        System.out.println("If a player discards all of his cards via playing them, and declares uno, they win!");
+        System.out.println("To start the game, press 1");
+        System.out.println("To stop the game, press 0");
+        System.out.println("Alright, Lets play Uno!");
+        
+        while(
+    }
+    
+    
