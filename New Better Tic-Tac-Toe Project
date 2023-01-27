@@ -6,6 +6,17 @@ public class Tic_Tac_Toe {
     Scanner scanner;
     static boolean Good;
     public static void startTheGame() {
+        System.out.println("Hello!");
+        System.out.println("Welcome to Tic-Tac-Toe");
+        System.out.println("This is a X and O, 2 player placement and strategy game");
+        System.out.println("First, decide who is X's and whos O's");
+        System.out.println("Both players take turns filling one of the 9 squares on the board with either their X or O");
+        System.out.println("Your goal, achieve either a stright or diagonal 3 in a row of all either X's or O's");
+        System.out.println("If you get three in a row, You Win!!!");
+        System.out.println("If not, and the board becomes filled with no winner, you tie");
+        System.out.println("Well, good luck, and have fun!!!!");
+        System.out.println("Text play to start a game, and Stop to end game");
+        while(shouldContinue) {
         Scanner scanner = new Scanner(System.in);
         while(Good) { 
         String nextLine = scanner.nextLine();
@@ -18,32 +29,13 @@ public class Tic_Tac_Toe {
                 break;
                     }
                 }
-        } catch (InputMismatchException error) {
+            } catch (InputMismatchException error) {
                 scanner.next();
                 System.out.println("Please Type Play to start the game!!!");
-            }
-        }
-    }
-    public Tic_Tac_Toe() {
-        System.out.println("Hello!");
-        System.out.println("Welcome to Tic-Tac-Toe");
-        System.out.println("This is a X and O, 2 player placement and strategy game");
-        System.out.println("First, decide who is X's and whos O's");
-        System.out.println("Both players take turns filling one of the 9 squares on the board with either their X or O");
-        System.out.println("Your goal, achieve either a stright or diagonal 3 in a row of all either X's or O's");
-        System.out.println("If you get three in a row, You Win!!!");
-        System.out.println("If not, and the board becomes filled with no winner, you tie");
-        System.out.println("Well, good luck, and have fun!!!!");
-        System.out.println("Text play to start a game, and Stop to end game");
-        Scanner scanner = new Scanner(System.in);
-        while(shouldContinue) {
-            if( input == scanner.nextInt()) {
-                if (input == 0) {
-                    break;
-                    }
                 }
             }
         }
+    }
     public void runEventLoop() {
         
     }
