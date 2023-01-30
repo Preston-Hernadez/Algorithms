@@ -1,4 +1,4 @@
-class Board { 
+public class Board { 
     static boolean shouldContinue = true;
     public static void convertToString(int arr[][]) 
     { 
@@ -17,13 +17,11 @@ class Board {
         }
     } 
     } 
-  
-    public static void main(String args[])
-    { 
+    public static void Board() {
         int arr[][] = { { 1, 2, 3 }, 
                         { 4, 5, 6 }, 
                         { 7, 8, 9 }
                                     }; 
         convertToString(arr); 
-    } 
+    }
 }
