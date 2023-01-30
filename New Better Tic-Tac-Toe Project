@@ -2,8 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Tic_Tac_Toe {
     static boolean shouldContinue = true;
-    Scanner scanner;
-    static boolean Good;
+    static boolean Good = true;
+    static Board board = new Board();
     public static void startTheGame() {
         System.out.println("Hello!");
         System.out.println("Welcome to Tic-Tac-Toe");
@@ -15,26 +15,28 @@ public class Tic_Tac_Toe {
         System.out.println("If not, and the board becomes filled with no winner, you tie");
         System.out.println("Well, good luck, and have fun!!!!");
         System.out.println("Type <Play> to start a game, and <Stop> to end game");
-        while(shouldContinue) {
         Scanner scanner = new Scanner(System.in);
-        while(Good) { 
-        String nextLine = scanner.nextLine();
-        try {
-        if (nextLine.equalsIgnoreCase("Play")) {
-            System.out.println("Lets play Tic_Tac_Toe");
-            }
-        else {
-            if(nextLine.equalsIgnoreCase("Stop")) {
-                break;
+        while(shouldContinue) {
+            while(Good) { 
+                try {
+                    String nextLine = scanner.nextLine();
+                    if (nextLine.equalsIgnoreCase("Play")) {
+                        System.out.println("Lets play Tic_Tac_Toe!");
+                        board.Board();
                     }
-                }
-            } catch (InputMismatchException error) {
-                scanner.next();
-                System.out.println("Please Type Play to start the game!!!");
+                    else {
+                        if(nextLine.equalsIgnoreCase("Stop")) {
+                            break;
+                        }
+                    }
+                } catch (InputMismatchException error) {
+                    scanner.next();
+                    System.out.println("Please Type Play to start the game!!!");
                 }
             }
         }
     }
+
     public static void main (String[] args) {
         Tic_Tac_Toe Tic_Tac_Toe = new Tic_Tac_Toe ();
         Tic_Tac_Toe.startTheGame();
