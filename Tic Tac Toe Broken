@@ -1,0 +1,37 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class Tic_Tac_Toe {
+    static boolean shouldContinue = true;
+    boolean Good = true;
+    int n = 8;
+    static Board board = new Board();
+    public static void startTheGame() {
+        System.out.println("Hello!");
+        System.out.println("Welcome to Tic-Tac-Toe");
+        System.out.println("This is an X and O, 2 player placement and strategy game");
+        System.out.println("First, decide who is X's and whos O's");
+        System.out.println("Both players take turns filling one of the 9 squares on the board with either their X or O");
+        System.out.println("Your goal, achieve either a stright or diagonal 3 in a row of all either X's or O's");
+        System.out.println("If you get three in a row, You Win!!!");
+        System.out.println("If not, and the board becomes filled with no winner, you tie");
+        System.out.println("Well, good luck, and have fun!!!!");
+        System.out.println("Type <Play> to start a game, and <Stop> to end game");
+        do {
+            Scanner scanner = new Scanner(System.in);
+            String nextLine = scanner.nextLine();
+            if (nextLine.equalsIgnoreCase("Play")) {
+                System.out.println("Lets play Tic_Tac_Toe!");
+                board.Board();
+                return Good;
+            }
+            else    {
+                System.out.println("Please type <Play> to start the game!!!");
+                } 
+               }
+         while(shouldContinue);
+        } 
+    public static void main (String[] args) {
+        Tic_Tac_Toe Tic_Tac_Toe = new Tic_Tac_Toe ();
+        Tic_Tac_Toe.startTheGame();
+    }
+}
