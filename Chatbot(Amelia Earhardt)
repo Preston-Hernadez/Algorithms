@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class AmeliaEarhardt {
+    public void getResponse() {
+     String length;
+     String statement;
+     Scanner userInput = new Scanner(System.in);
+     String nextLine = userInput.nextLine();
+     String response2 = new String ("Good");
+     String response3 = new String ("Mega Good");
+     
+         if (nextLine.equalsIgnoreCase("Mother")) {
+            return response2;
+        }
+        else if (nextLine.equalsIgnoreCase("Preston")) {
+            return response3;
+        }
+     
+    }
+    public string rerun()
+}
