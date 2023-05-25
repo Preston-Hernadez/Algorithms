@@ -1,14 +1,24 @@
-import java.util.Scanner;
 public class Amelia {
-    Boolean Good = true;
-    Scanner scanner = new Scanner(System.in);
-    public void Run() {
-        while(Good) {
-            String nextLine = scanner.nextLine();
-                if(nextLine.equalsIgnoreCase("Hi")) {
-                System.out.println("Great");
-            }
+    public String getGreeting() {
+       return "Hello, wanna chat?";
+    }
+    public String chatRunner() {
+        String response = "";
+        if (statement.indexOf("no") >= 0)
+        {
+            response = "Why so negative?";
         }
+        else if (statement.indexOf("mother") >= 0
+                || statement.indexOf("father") >= 0
+                || statement.indexOf("sister") >= 0
+                || statement.indexOf("brother") >= 0)
+        {
+            response = "Tell me more about your family.";
+        }
+        else
+        {
+            response = getRandomResponse();
+        }
+        return response;
     }
 }
-
